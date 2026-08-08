@@ -205,71 +205,147 @@
     <h2 class="text-3xl font-bold mb-2" style="color:#f1f5f9;">AI Projects</h2>
     <p class="text-muted mb-10 text-sm max-w-xl">End-to-end systems designed and built using Google AI Studio, Gemini, and AI-native architectures — demonstrating agentic product thinking and technical depth.</p>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="flex flex-col gap-8">
 
       <!-- Project 1 -->
-      <div class="card-hover rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
-        <div class="flex items-start justify-between mb-4">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.25);">
-            <svg width="20" height="20" fill="none" stroke="#60a5fa" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
+      <div class="card-hover rounded-2xl border border-surfaceBorder overflow-hidden" style="background:#1e293b;">
+        <!-- Card header -->
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.25);">
+              <svg width="20" height="20" fill="none" stroke="#60a5fa" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="flex gap-2 flex-wrap justify-end">
+              <span class="tag tag-green">Agentic</span>
+              <span class="tag">Gemini</span>
+              <span class="tag tag-amber">Civic Tech</span>
+            </div>
           </div>
-          <div class="flex gap-2 flex-wrap justify-end">
-            <span class="tag tag-green">Agentic</span>
-            <span class="tag">Gemini</span>
+          <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">Bangalore Smart Waste Management System</h3>
+          <p class="text-sm text-muted leading-relaxed mb-5">
+            AI-enabled civic operations platform with GPS simulation, real-time route optimisation, and per-ward personalisation. Features an interactive map, proximity alerts within 500m, a driver console, and escalation workflows — demonstrating end-to-end AI system design at city scale.
+          </p>
+        </div>
+
+        <!-- 4-column doc grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 divide-x divide-y divide-surfaceBorder border-t border-surfaceBorder">
+
+          <!-- Product Vision -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#60a5fa;">Product Vision</p>
+            <p class="text-xs text-muted leading-relaxed">Eliminate manual waste-collection dispatching in Bangalore's wards by replacing radio-based coordination with an AI-driven platform that routes drivers in real time, personalises collection schedules per ward density, and auto-escalates missed pickups — reducing citizen complaints and idle truck time.</p>
           </div>
+
+          <!-- User Persona -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#60a5fa;">User Personas</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li><strong class="text-slate-300">Driver</strong> — needs turn-by-turn optimised routes and real-time updates on priority stops.</li>
+              <li><strong class="text-slate-300">Ward Admin</strong> — monitors coverage, reviews escalation logs, adjusts schedules.</li>
+              <li><strong class="text-slate-300">Citizen</strong> — receives proximity alerts (&lt;500m) and can report missed pickups.</li>
+            </ul>
+          </div>
+
+          <!-- AI Architecture -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#60a5fa;">AI Architecture</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li><strong class="text-slate-300">Prompt Engineering</strong> — structured prompts feed ward density + GPS data to Gemini to generate optimised daily routes and escalation summaries.</li>
+              <li><strong class="text-slate-300">Function Calling</strong> — Gemini calls <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#93c5fd;">get_ward_load()</code>, <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#93c5fd;">trigger_escalation()</code>, and <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#93c5fd;">update_driver_route()</code> to act on live data without human dispatch.</li>
+            </ul>
+          </div>
+
+          <!-- Metrics -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#60a5fa;">Metrics &amp; Results</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li>🗺️ Route generation: &lt;3s per ward using Gemini function calls</li>
+              <li>📍 Proximity alert accuracy: 500m geofence with real-time GPS simulation</li>
+              <li>⚡ Escalation auto-trigger: zero manual dispatch for missed stops</li>
+              <li>👤 3 distinct personas served from a single AI model layer</li>
+            </ul>
+          </div>
+
         </div>
-        <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">Bangalore Smart Waste Management System</h3>
-        <p class="text-sm text-muted leading-relaxed mb-4">
-          AI-enabled civic operations platform with GPS simulation, real-time route optimisation, and per-ward personalisation. Features an interactive map, proximity alerts within 500m, a driver console, and escalation workflows — demonstrating end-to-end AI system design at city scale.
-        </p>
-        <div class="border-t border-surfaceBorder pt-4 mt-2">
-          <p class="text-xs font-semibold text-muted mb-2 uppercase tracking-wide">Capabilities demonstrated</p>
-          <ul class="text-sm text-muted space-y-1">
-            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Route optimisation &amp; GPS simulation engine</li>
-            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Real-time proximity alerts and geofencing</li>
-            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Agentic escalation workflow design</li>
-            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Multi-persona UX (driver, admin, citizen)</li>
-          </ul>
-        </div>
-        <div class="flex flex-wrap gap-2 mt-4">
+
+        <div class="flex flex-wrap gap-2 p-5 border-t border-surfaceBorder">
           <span class="tag">Google AI Studio</span>
           <span class="tag tag-purple">Route Optimization</span>
-          <span class="tag tag-amber">Civic Tech</span>
+          <span class="tag tag-green">Function Calling</span>
+          <span class="tag">GPS Simulation</span>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="card-hover rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
-        <div class="flex items-start justify-between mb-4">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.25);">
-            <svg width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" viewBox="0 0 24 24">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
+      <div class="card-hover rounded-2xl border border-surfaceBorder overflow-hidden" style="background:#1e293b;">
+        <!-- Card header -->
+        <div class="p-6 pb-0">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.25);">
+              <svg width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div class="flex gap-2 flex-wrap justify-end">
+              <span class="tag tag-purple">LLM-Driven</span>
+              <span class="tag">BPMN/DMN</span>
+              <span class="tag tag-green">Automation Governance</span>
+            </div>
           </div>
-          <div class="flex gap-2 flex-wrap justify-end">
-            <span class="tag tag-purple">LLM-Driven</span>
-            <span class="tag">BPMN/DMN</span>
+          <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">BPMN/DMN AI Testing &amp; Validation Platform</h3>
+          <p class="text-sm text-muted leading-relaxed mb-5">
+            AI sandbox for business automation governance — upload, edit, validate, and simulate BPMN/DMN models with LLM-driven audits. Supports live XML editing, visual debugging, automated test generation, and standards-compliant export. Directly applicable to enterprise developer platform governance.
+          </p>
+        </div>
+
+        <!-- 4-column doc grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 divide-x divide-y divide-surfaceBorder border-t border-surfaceBorder">
+
+          <!-- Product Vision -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#a78bfa;">Product Vision</p>
+            <p class="text-xs text-muted leading-relaxed">Make BPMN/DMN model quality a first-class, automated concern — so enterprise automation teams can detect compliance issues, logic errors, and test gaps before production deployment, without relying on specialist manual review. Governance as a guardrail, not a gate.</p>
           </div>
+
+          <!-- User Persona -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#a78bfa;">User Personas</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li><strong class="text-slate-300">Process Modeller</strong> — uploads BPMN/DMN files, iterates on live XML, and exports validated versions.</li>
+              <li><strong class="text-slate-300">QA / Test Engineer</strong> — runs AI-generated test cases against decision tables and process flows.</li>
+              <li><strong class="text-slate-300">Platform PM</strong> — reviews audit reports to track standards compliance across the team's automation portfolio.</li>
+            </ul>
+          </div>
+
+          <!-- AI Architecture -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#a78bfa;">AI Architecture</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li><strong class="text-slate-300">Prompt Engineering</strong> — role-framed system prompts instruct Gemini to act as a BPMN/DMN standards auditor, returning structured JSON with issue type, severity, and remediation suggestion.</li>
+              <li><strong class="text-slate-300">Function Calling</strong> — model calls <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#c4b5fd;">validate_xml()</code>, <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#c4b5fd;">generate_test_cases()</code>, and <code style="background:#0f172a;padding:1px 4px;border-radius:3px;color:#c4b5fd;">export_compliant_model()</code> to operationalise audit findings.</li>
+            </ul>
+          </div>
+
+          <!-- Metrics -->
+          <div class="p-5">
+            <p class="skill-group-title mb-2" style="color:#a78bfa;">Metrics &amp; Results</p>
+            <ul class="text-xs text-muted space-y-2">
+              <li>✅ Audit turnaround: &lt;5s per model vs hours of manual review</li>
+              <li>🧪 Test case generation: auto-produces edge-case scenarios from DMN tables</li>
+              <li>🔍 Visual debug feedback on live XML edits in real time</li>
+              <li>📤 Standards-compliant export ready for production deployment</li>
+            </ul>
+          </div>
+
         </div>
-        <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">BPMN/DMN AI Testing &amp; Validation Platform</h3>
-        <p class="text-sm text-muted leading-relaxed mb-4">
-          AI sandbox for business automation governance — upload, edit, validate, and simulate BPMN/DMN models with LLM-driven audits. Supports live XML editing, visual debugging, automated test generation, and standards-compliant export. Directly applicable to enterprise developer platform governance.
-        </p>
-        <div class="border-t border-surfaceBorder pt-4 mt-2">
-          <p class="text-xs font-semibold text-muted mb-2 uppercase tracking-wide">Capabilities demonstrated</p>
-          <ul class="text-sm text-muted space-y-1">
-            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> LLM-driven model auditing and validation</li>
-            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Automated test case generation from specs</li>
-            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Live XML editing with visual debug feedback</li>
-            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Standards-compliant export pipeline</li>
-          </ul>
-        </div>
-        <div class="flex flex-wrap gap-2 mt-4">
+
+        <div class="flex flex-wrap gap-2 p-5 border-t border-surfaceBorder">
           <span class="tag tag-purple">Google AI Studio</span>
           <span class="tag">Prompt Engineering</span>
-          <span class="tag tag-green">Automation Governance</span>
+          <span class="tag tag-green">Function Calling</span>
+          <span class="tag">XML Validation</span>
         </div>
       </div>
 
@@ -307,7 +383,7 @@
         <div class="pb-12 flex-1">
           <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
             <div>
-              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Product Manager — IBM BAMOE</h3>
+              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Product Manager — <a href="https://www.ibm.com/products/ibm-business-automation-manager-open-editions" target="_blank" style="color:#60a5fa;text-decoration:none;border-bottom:1px solid rgba(96,165,250,0.4);" onmouseover="this.style.borderBottomColor='#60a5fa'" onmouseout="this.style.borderBottomColor='rgba(96,165,250,0.4)'">IBM Business Automation Manager Open Editions (BAMOE)</a></h3>
               <p class="text-sm text-muted">IBM · Jul 2024 – Present</p>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -325,7 +401,7 @@
           <ul class="text-sm text-muted space-y-2 leading-relaxed">
             <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Co-own AI automation platform (workflow orchestration, decision engines, MCP-based agents) serving <strong class="text-slate-300 font-medium">300+ enterprise clients</strong></li>
             <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Led GenAI tasks, MCP Server integration, and agentic workflow design — driving adoption across <strong class="text-slate-300 font-medium">15+ enterprises</strong></li>
-            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Defined roadmap across AI capabilities, platform scale, and <strong class="text-slate-300 font-medium">developer experience</strong> — backlog covers onboarding, API governance, and sandbox environments</li>
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Defined roadmap across AI capabilities, platform scale, and <strong class="text-slate-300 font-medium">developer experience</strong></li>
             <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Translated <strong class="text-slate-300 font-medium">50+ RFEs</strong> into roadmap themes and epics; partnered with sales &amp; clients to drive <strong class="text-slate-300 font-medium">$10M+ pipeline</strong> via architecture deep-dives</li>
             <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Expanded adoption by <strong class="text-slate-300 font-medium">12+ enterprises</strong> through platform positioning, partner enablement, and capability tiering</li>
           </ul>
