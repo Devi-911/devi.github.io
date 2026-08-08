@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devidutta Sahoo — AI &amp; Platform Product Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#60a5fa',
+            brandDeep: '#3b82f6',
+            surface: '#0f172a',
+            surfaceCard: '#1e293b',
+            surfaceBorder: '#334155',
+            muted: '#94a3b8',
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', '"Fira Code"', 'Consolas', 'monospace'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { background-color: #0f172a; }
+    body { background-color: #0f172a; color: #e2e8f0; }
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(96, 165, 250, 0.12);
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      background-color: rgba(96, 165, 250, 0.12);
+      color: #93c5fd;
+      border: 1px solid rgba(96, 165, 250, 0.25);
+    }
+    .tag-purple {
+      background-color: rgba(167, 139, 250, 0.12);
+      color: #c4b5fd;
+      border-color: rgba(167, 139, 250, 0.25);
+    }
+    .tag-green {
+      background-color: rgba(52, 211, 153, 0.12);
+      color: #6ee7b7;
+      border-color: rgba(52, 211, 153, 0.25);
+    }
+    .tag-amber {
+      background-color: rgba(251, 191, 36, 0.10);
+      color: #fcd34d;
+      border-color: rgba(251, 191, 36, 0.25);
+    }
+    .divider {
+      border-color: #334155;
+    }
+    .nav-link {
+      transition: color 0.15s ease;
+    }
+    .nav-link:hover { color: #60a5fa; }
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #60a5fa;
+    }
+    .timeline-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #60a5fa;
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .timeline-line {
+      width: 1px;
+      background: #334155;
+      flex-shrink: 0;
+    }
+    .metric-card {
+      background: rgba(96, 165, 250, 0.06);
+      border: 1px solid rgba(96, 165, 250, 0.18);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+    }
+    .skill-group-title {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    @media print {
+      nav { display: none; }
+      .card-hover:hover { transform: none; box-shadow: none; }
+    }
+  </style>
+</head>
+<body class="dark antialiased leading-relaxed">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 border-b border-surfaceBorder" style="background:rgba(15,23,42,0.92);backdrop-filter:blur(12px);">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <span class="font-semibold text-sm tracking-wide" style="color:#e2e8f0;">Devidutta Sahoo</span>
+      <div class="flex items-center gap-6 text-sm text-muted">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="mailto:deviduttasahoo123@gmail.com"
+           class="px-4 py-1.5 rounded-full text-xs font-semibold border border-brandDeep text-brand"
+           style="transition:background 0.15s ease;"
+           onmouseover="this.style.background='rgba(59,130,246,0.15)'"
+           onmouseout="this.style.background='transparent'">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-20">
+    <div class="flex flex-col gap-6 max-w-3xl">
+      <p class="section-label">Product Manager · AI &amp; Platform Automation</p>
+      <h1 class="text-5xl font-bold tracking-tight leading-tight" style="color:#f1f5f9;">
+        Devidutta<br/>
+        <span class="gradient-text">Sahoo</span>
+      </h1>
+      <p class="text-lg leading-relaxed" style="color:#94a3b8; max-width: 600px;">
+        I build platforms that make complex systems safe to extend at speed — owning roadmaps across AI agent workflows, decision automation, and developer experience for 300+ enterprise clients at IBM.
+      </p>
+      <p class="text-base leading-relaxed" style="color:#64748b; max-width: 580px;">
+        4+ years across IBM BAMOE, IBM Automation GTM, and IBM Sterling. Google AI Fundamentals certified. MBA (Systems &amp; Marketing), XIMB. Currently driving $10M+ pipeline through AI-first platform positioning.
+      </p>
+
+      <!-- Key metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+        <div class="metric-card">
+          <div class="text-2xl font-bold text-brand">300+</div>
+          <div class="text-xs text-muted mt-1">Enterprise Clients</div>
+        </div>
+        <div class="metric-card">
+          <div class="text-2xl font-bold text-brand">$10M+</div>
+          <div class="text-xs text-muted mt-1">Pipeline Driven</div>
+        </div>
+        <div class="metric-card">
+          <div class="text-2xl font-bold text-brand">50+</div>
+          <div class="text-xs text-muted mt-1">RFEs → Roadmap</div>
+        </div>
+        <div class="metric-card">
+          <div class="text-2xl font-bold text-brand">15+</div>
+          <div class="text-xs text-muted mt-1">Enterprise AI Adoptions</div>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-wrap gap-3 mt-2">
+        <a href="https://linkedin.com/in/devidutta911" target="_blank"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-surfaceBorder text-muted nav-link"
+           style="background:#1e293b;">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Devi-911" target="_blank"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-surfaceBorder text-muted nav-link"
+           style="background:#1e293b;">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:deviduttasahoo123@gmail.com"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-brandDeep text-brand"
+           style="background:rgba(59,130,246,0.08);">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          deviduttasahoo123@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="max-w-5xl mx-auto px-6"><hr class="divider"/></div>
+
+  <!-- AI PROJECTS -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-20">
+    <p class="section-label mb-3">Google AI Studio · Built Projects</p>
+    <h2 class="text-3xl font-bold mb-2" style="color:#f1f5f9;">AI Projects</h2>
+    <p class="text-muted mb-10 text-sm max-w-xl">End-to-end systems designed and built using Google AI Studio, Gemini, and AI-native architectures — demonstrating agentic product thinking and technical depth.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Project 1 -->
+      <div class="card-hover rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.25);">
+            <svg width="20" height="20" fill="none" stroke="#60a5fa" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="flex gap-2 flex-wrap justify-end">
+            <span class="tag tag-green">Agentic</span>
+            <span class="tag">Gemini</span>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">Bangalore Smart Waste Management System</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">
+          AI-enabled civic operations platform with GPS simulation, real-time route optimisation, and per-ward personalisation. Features an interactive map, proximity alerts within 500m, a driver console, and escalation workflows — demonstrating end-to-end AI system design at city scale.
+        </p>
+        <div class="border-t border-surfaceBorder pt-4 mt-2">
+          <p class="text-xs font-semibold text-muted mb-2 uppercase tracking-wide">Capabilities demonstrated</p>
+          <ul class="text-sm text-muted space-y-1">
+            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Route optimisation &amp; GPS simulation engine</li>
+            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Real-time proximity alerts and geofencing</li>
+            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Agentic escalation workflow design</li>
+            <li class="flex items-start gap-2"><span style="color:#60a5fa;margin-top:3px;">›</span> Multi-persona UX (driver, admin, citizen)</li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="tag">Google AI Studio</span>
+          <span class="tag tag-purple">Route Optimization</span>
+          <span class="tag tag-amber">Civic Tech</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card-hover rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.25);">
+            <svg width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="flex gap-2 flex-wrap justify-end">
+            <span class="tag tag-purple">LLM-Driven</span>
+            <span class="tag">BPMN/DMN</span>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-2" style="color:#f1f5f9;">BPMN/DMN AI Testing &amp; Validation Platform</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">
+          AI sandbox for business automation governance — upload, edit, validate, and simulate BPMN/DMN models with LLM-driven audits. Supports live XML editing, visual debugging, automated test generation, and standards-compliant export. Directly applicable to enterprise developer platform governance.
+        </p>
+        <div class="border-t border-surfaceBorder pt-4 mt-2">
+          <p class="text-xs font-semibold text-muted mb-2 uppercase tracking-wide">Capabilities demonstrated</p>
+          <ul class="text-sm text-muted space-y-1">
+            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> LLM-driven model auditing and validation</li>
+            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Automated test case generation from specs</li>
+            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Live XML editing with visual debug feedback</li>
+            <li class="flex items-start gap-2"><span style="color:#a78bfa;margin-top:3px;">›</span> Standards-compliant export pipeline</li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="tag tag-purple">Google AI Studio</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag tag-green">Automation Governance</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cert badge -->
+    <div class="mt-6 flex items-center gap-3 p-4 rounded-xl border border-surfaceBorder" style="background:rgba(52,211,153,0.05);">
+      <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(52,211,153,0.15);">
+        <svg width="16" height="16" fill="none" stroke="#6ee7b7" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <span class="text-sm font-semibold" style="color:#6ee7b7;">Google AI Fundamentals Professional Certificate</span>
+        <span class="text-sm text-muted ml-2">· 2026 · Applied GenAI, prompt engineering, and AI workflows using Gemini, NotebookLM, AI Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="max-w-5xl mx-auto px-6"><hr class="divider"/></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-5xl mx-auto px-6 py-20">
+    <p class="section-label mb-3">Enterprise Track Record</p>
+    <h2 class="text-3xl font-bold mb-2" style="color:#f1f5f9;">Experience</h2>
+    <p class="text-muted mb-12 text-sm max-w-xl">Platform and automation product management across IBM's enterprise portfolio — from AI agent workflows and decision engines to SRE-adjacent reliability thinking and legacy system modernisation.</p>
+
+    <div class="space-y-0">
+
+      <!-- Role 1: BAMOE PM -->
+      <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line flex-1 mt-2"></div>
+        </div>
+        <div class="pb-12 flex-1">
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+            <div>
+              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Product Manager — IBM BAMOE</h3>
+              <p class="text-sm text-muted">IBM · Jul 2024 – Present</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag tag-green">Current</span>
+              <span class="tag">AI Platform</span>
+            </div>
+          </div>
+
+          <!-- Relevance callout for MDO role -->
+          <div class="mt-3 mb-4 p-3 rounded-lg text-xs border border-surfaceBorder" style="background:rgba(96,165,250,0.05);color:#94a3b8;">
+            <span class="font-semibold text-brand">MDO relevance: </span>
+            Directly mirrors the platform PM charter — owning developer-facing standards, paved paths, and AI/AIOps strategy for a multi-tenant enterprise automation platform.
+          </div>
+
+          <ul class="text-sm text-muted space-y-2 leading-relaxed">
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Co-own AI automation platform (workflow orchestration, decision engines, MCP-based agents) serving <strong class="text-slate-300 font-medium">300+ enterprise clients</strong></li>
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Led GenAI tasks, MCP Server integration, and agentic workflow design — driving adoption across <strong class="text-slate-300 font-medium">15+ enterprises</strong></li>
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Defined roadmap across AI capabilities, platform scale, and <strong class="text-slate-300 font-medium">developer experience</strong> — backlog covers onboarding, API governance, and sandbox environments</li>
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Translated <strong class="text-slate-300 font-medium">50+ RFEs</strong> into roadmap themes and epics; partnered with sales &amp; clients to drive <strong class="text-slate-300 font-medium">$10M+ pipeline</strong> via architecture deep-dives</li>
+            <li class="flex gap-2"><span class="text-brand mt-0.5">›</span>Expanded adoption by <strong class="text-slate-300 font-medium">12+ enterprises</strong> through platform positioning, partner enablement, and capability tiering</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag">BPMN/DMN</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag tag-purple">GenAI Agents</span>
+            <span class="tag">Roadmapping</span>
+            <span class="tag">API Governance</span>
+            <span class="tag tag-amber">Developer Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 2: GTM PM -->
+      <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot" style="background:#a78bfa;box-shadow:0 0 0 3px rgba(167,139,250,0.2);"></div>
+          <div class="timeline-line flex-1 mt-2"></div>
+        </div>
+        <div class="pb-12 flex-1">
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+            <div>
+              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Go-To-Market Product Manager — IBM Automation</h3>
+              <p class="text-sm text-muted">IBM · Jul 2024 – Nov 2024</p>
+            </div>
+            <span class="tag tag-purple">GTM Strategy</span>
+          </div>
+          <ul class="text-sm text-muted space-y-2 leading-relaxed mt-3">
+            <li class="flex gap-2"><span style="color:#a78bfa;" class="mt-0.5">›</span>Built competitive positioning vs Pega, Power Automate, n8n, and Camunda — identifying <strong class="text-slate-300 font-medium">6+ differentiators</strong></li>
+            <li class="flex gap-2"><span style="color:#a78bfa;" class="mt-0.5">›</span>Defined AI + workflow + decision automation narrative; supported sales &amp; partner enablement materials</li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag tag-purple">Competitive Analysis</span>
+            <span class="tag">Partner Enablement</span>
+            <span class="tag">Sales Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 3: Event Automation Intern -->
+      <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot" style="background:#6ee7b7;box-shadow:0 0 0 3px rgba(52,211,153,0.2);"></div>
+          <div class="timeline-line flex-1 mt-2"></div>
+        </div>
+        <div class="pb-12 flex-1">
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+            <div>
+              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Product Manager Intern — IBM Event Automation</h3>
+              <p class="text-sm text-muted">IBM · Apr 2023 – Jun 2023</p>
+            </div>
+            <span class="tag tag-green">Internship</span>
+          </div>
+          <ul class="text-sm text-muted space-y-2 leading-relaxed mt-3">
+            <li class="flex gap-2"><span style="color:#6ee7b7;" class="mt-0.5">›</span>Researched event-driven/Kafka platforms and contributed to ML-driven automation use cases</li>
+            <li class="flex gap-2"><span style="color:#6ee7b7;" class="mt-0.5">›</span>Improved developer workflows; recognised by VP for product insights</li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag tag-green">Kafka</span>
+            <span class="tag">Event-Driven</span>
+            <span class="tag">Developer Workflows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 4: Infosys -->
+      <div class="flex gap-4">
+        <div class="flex flex-col items-center">
+          <div class="timeline-dot" style="background:#fcd34d;box-shadow:0 0 0 3px rgba(251,191,36,0.2);"></div>
+          <div class="mt-2" style="width:1px;background:transparent;flex:1;"></div>
+        </div>
+        <div class="pb-4 flex-1">
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+            <div>
+              <h3 class="text-base font-semibold" style="color:#f1f5f9;">Systems Engineer — IBM Sterling OMS</h3>
+              <p class="text-sm text-muted">Infosys Ltd · Nov 2020 – Jun 2022</p>
+            </div>
+            <span class="tag tag-amber">Enterprise Systems</span>
+          </div>
+          <div class="mt-3 mb-3 p-3 rounded-lg text-xs border border-surfaceBorder" style="background:rgba(251,191,36,0.04);color:#94a3b8;">
+            <span class="font-semibold text-amber-300">MDO relevance: </span>
+            Hands-on with ERP-class operations systems (Sterling OMS parallels SAP surround) — provides first-principles understanding of enterprise system governance, change risk, and operational reliability.
+          </div>
+          <ul class="text-sm text-muted space-y-2 leading-relaxed">
+            <li class="flex gap-2"><span class="text-amber-300 mt-0.5">›</span>Supported IBM Sterling OMS and enterprise backend systems using COBOL, DB2, and JCL across distributed environments</li>
+            <li class="flex gap-2"><span class="text-amber-300 mt-0.5">›</span>Developed understanding of ERP-adjacent operational systems, change management, and legacy platform constraints</li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag tag-amber">IBM Sterling OMS</span>
+            <span class="tag">COBOL / DB2</span>
+            <span class="tag">Enterprise ERP</span>
+            <span class="tag">JCL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="max-w-5xl mx-auto px-6"><hr class="divider"/></div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-20">
+    <p class="section-label mb-3">Capabilities</p>
+    <h2 class="text-3xl font-bold mb-10" style="color:#f1f5f9;">Skills</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">Product</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag">Roadmapping</span>
+          <span class="tag">Platform Strategy</span>
+          <span class="tag">Backlog Prioritisation</span>
+          <span class="tag">Stakeholder Mgmt</span>
+          <span class="tag">GTM</span>
+          <span class="tag">Developer NPS</span>
+          <span class="tag">DORA Metrics</span>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">AI &amp; Systems</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-purple">AI Agents</span>
+          <span class="tag tag-purple">GenAI Workflows</span>
+          <span class="tag tag-purple">Prompt Engineering</span>
+          <span class="tag tag-purple">LLM Applications</span>
+          <span class="tag tag-purple">Gemini / AI Studio</span>
+          <span class="tag tag-purple">MCP Server</span>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">Architecture</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-green">Kubernetes</span>
+          <span class="tag tag-green">APIs</span>
+          <span class="tag tag-green">Event-Driven Systems</span>
+          <span class="tag tag-green">Microservices</span>
+          <span class="tag tag-green">Kafka</span>
+          <span class="tag tag-green">BPMN / DMN</span>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-6 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">Tools &amp; Platforms</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-amber">Jira</span>
+          <span class="tag tag-amber">Aha!</span>
+          <span class="tag tag-amber">Salesforce</span>
+          <span class="tag tag-amber">VS Code</span>
+          <span class="tag tag-amber">IBM Bob</span>
+          <span class="tag tag-amber">NotebookLM</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Education -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <div class="flex-1 rounded-2xl p-5 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">Education</p>
+        <div class="space-y-2">
+          <div>
+            <p class="text-sm font-semibold" style="color:#f1f5f9;">MBA — Systems &amp; Marketing</p>
+            <p class="text-xs text-muted">XIMB · 2022 – 2024</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold" style="color:#f1f5f9;">B.Tech — Electronics &amp; Communication</p>
+            <p class="text-xs text-muted">Silicon Institute of Technology · 2016 – 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 rounded-2xl p-5 border border-surfaceBorder" style="background:#1e293b;">
+        <p class="skill-group-title">Community &amp; Recognition</p>
+        <div class="space-y-2">
+          <div>
+            <p class="text-sm font-semibold" style="color:#f1f5f9;">PM Space — YouTube</p>
+            <p class="text-xs text-muted">Interviews senior Product Management experts for industry insights</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold" style="color:#f1f5f9;">Toastmasters International</p>
+            <p class="text-xs text-muted">3× VP · Area Contest Winner · Triple Crown</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-surfaceBorder mt-4 py-10 text-center">
+    <p class="text-xs text-muted">Devidutta Sahoo · AI &amp; Platform Product Manager · <a href="mailto:deviduttasahoo123@gmail.com" class="text-brand">deviduttasahoo123@gmail.com</a> · +91 9437144320</p>
+    <p class="text-xs mt-2" style="color:#334155;">Made with IBM Bob</p>
+  </footer>
+
+</body>
+</html>
